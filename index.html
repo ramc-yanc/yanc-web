@@ -195,6 +195,7 @@
                     <a href="#valueproposition"><i class="fas fa-gift"></i> Value Proposition</a>
                     <a href="#Why us"><i class="fas fa-question-circle"></i> Why Us</a>
                     <a href="#joinus"><i class="fas fa-users"></i> Who Can Join Us</a>
+                    <a href="#young-minds-mashup"><i class="fas fa-lightbulb"></i>Young Minds Mashup</a>
                 </div>
             </div>
             <a href="https://forms.gle/bUwibH6ztdQSV8Dt6" target="_blank"><i class="fas fa-briefcase"></i> Careers</a>
@@ -227,6 +228,7 @@
                 <a href="#valueproposition"><i class="fas fa-gift"></i> Value Proposition</a>
                 <a href="#Why us"><i class="fas fa-question-circle"></i> Why Us</a>
                 <a href="#joinus"><i class="fas fa-users"></i> Who Can Join Us</a>
+                <a href="#young-minds-mashup"><i class="fas fa-lightbulb "></i> Young Minds Mashup</a>
             </div>
         </div>
         <div class="toggle">
@@ -1455,7 +1457,239 @@ Our Purpose    </h2>      <div class="vision-grid">
       </div>
     </div>
   </section>
-  
+  <!-- here i have changed the code young-minds-mashup from 1483 to 1790 as one section you need to replace this complete code with contact-section code -->
+  <section id="young-minds-mashup">
+    <style>
+        /* General Section Styling */
+        #young-minds-mashup {
+            padding: 60px 20px;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark gray text for readability */
+            margin-bottom: 30px; /* Reduced space below the section */
+        }
+
+        /* Title Styling */
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000; /* Black text */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+
+        /* Thicker Light Grey Underline */
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px; /* Thicker underline */
+            background-color: #d3d3d3; /* Light grey color */
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #555; /* Lighter gray for description */
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        /* Remove extra underline from the flash-card-title */
+        .flash-card-title {
+            border-bottom: none; /* No extra bottom border */
+        }
+
+        .benefits-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .benefit-item {
+            width: 280px;
+            padding: 30px;
+            background-color: #fff;
+            border: 2px solid #000; /* Black border around the card */
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Pulse effect only for FontAwesome icons */
+        .benefit-item i {
+            font-size: 3rem;
+            color: #000; /* Black color for icons */
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite; /* Pulse effect */
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1); /* Normal size */
+            }
+            50% {
+                transform: scale(1.1); /* Slightly larger */
+            }
+            100% {
+                transform: scale(1); /* Back to normal size */
+            }
+        }
+
+        .benefit-item h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #000; /* Black text */
+            margin-bottom: 10px;
+        }
+
+        .benefit-item p {
+            font-size: 1rem;
+            color: #777; /* Light gray text for description */
+        }
+
+        .apply-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .apply-button a {
+            padding: 15px 40px;
+            background-color: #000; /* Black button */
+            color: #fff; /* White text */
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .apply-button a:hover {
+            background-color: #333; /* Dark gray on hover */
+            transform: scale(1.05);
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 1.1rem;
+            color: #555; /* Lighter gray text */
+        }
+
+        .contact-section a {
+            color: #000; /* Black color for email link */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            color: #333; /* Dark gray on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .benefit-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .benefit-item {
+                width: 48%;
+            }
+
+            .section-description {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .benefit-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .section-title {
+                font-size: 1.8rem; /* Slightly smaller on mobile */
+                letter-spacing: 1px; /* Adjust letter-spacing for better fit */
+            }
+
+            .section-description {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <h8 class="section-title">Young Minds Mashup</h8>
+        <h4>Transforming Ideas into Impactful Startups</h4>
+        
+        <p class="section-description">
+            <tr>
+              <td colspan="3">
+                <ul>
+                   <li> Are you brimming with innovative ideas?</li>
+                   <li> Do you dream of transforming your concepts into a successful startup?</li>
+                   <li>At YANC, we are here to make that happen!</li>  
+                   <li>Young Minds Mashup is an exclusive incubation program designed to provide young entrepreneurs, aged 15 to 25, with the tools, mentorship, and funding you need to scale your ideas.</li>
+                </ul>
+              </td>
+            </tr>
+          </p>
+
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Get Mentorship</h3>
+                <p>Mentorship from industry experts to guide you every step of the way.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-indian-rupee-sign"></i> <!-- Rupee icon -->
+                <h3>Access Funding</h3>
+                <p>Funding opportunities to give wings to your startup ideas.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Scale & Sustain</h3>
+                <p>Learn how to scale and sustain your startup in the long run.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-users"></i>
+                <h3>Collaborate & Network</h3>
+                <p>Collaborate and network with like-minded peers to accelerate your growth.</p>
+            </div>
+        </div>
+
+        <!-- Apply Button -->
+        <div class="apply-button">
+            <a href="https://forms.gle/zAchDDFV6zTCNFC19" target="_blank">Submit Your Idea</a>
+        </div>
+
+      <br><br>
+            <p>Have Questions? Reach out to us at: connect@yanc.in</a></p>
+        
+    </div>
+
     <section class="contact-section" id="mail">
       <p class="intro-text" style="color: black;">Ready to embark on your journey of growth and empowerment? Contact us today!</p>
       <button class="email-button" onclick="sendMail()">Email Us</button>
@@ -1558,6 +1792,7 @@ Our Purpose    </h2>      <div class="vision-grid">
                       <li><a href="#valueproposition">Value Propositions</a></li>
                       <li><a href="#Why us">Why Us</a></li>
                       <li><a href="#joinus">Who Can Join</a></li>
+                      <li><a href="#young-minds-mashup">Young Minds Mashup</a></li>
                   </ul>
               </div>
               <div class="footer-col">
