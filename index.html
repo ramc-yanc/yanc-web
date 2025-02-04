@@ -189,8 +189,10 @@
                     <a href="#corevalues"><i class="fas fa-cogs"></i> Core Values</a>
                 </div>
             </div>
+            
             <div class="nav-item">
                 <a href="#"><i class="fas fa-cogs"></i> Our Offerings</a>
+                
                 <div class="dropdown">
                     <a href="#valueproposition"><i class="fas fa-gift"></i> Value Proposition</a>
                     <a href="#Why us"><i class="fas fa-question-circle"></i> Why Us</a>
@@ -198,6 +200,7 @@
                     <a href="#young-minds-mashup"><i class="fas fa-lightbulb"></i>Young Minds Mashup</a>
                 </div>
             </div>
+            <a href="#team"><i class="fas fa-user-friends"></i>Our Team</a>
             <a href="https://forms.gle/bUwibH6ztdQSV8Dt6" target="_blank"><i class="fas fa-briefcase"></i> Careers</a>
             <a href="https://forms.gle/cczEPyMzFysGniSbA" target="_blank"><i class="fas fa-phone-alt"></i> Get in Touch</a>
         </nav>
@@ -230,6 +233,9 @@
                 <a href="#joinus"><i class="fas fa-users"></i> Who Can Join Us</a>
                 <a href="#young-minds-mashup"><i class="fas fa-lightbulb "></i> Young Minds Mashup</a>
             </div>
+        </div>
+        <div class="toggle">
+            <a href="#team"><i class="fas fa-user-friends"></i>Our Team</a>
         </div>
         <div class="toggle">
             <a href="https://forms.gle/bUwibH6ztdQSV8Dt6"><i class="fas fa-briefcase"></i> Careers</a>
@@ -454,6 +460,7 @@ img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-top: 5px;
 }
 
 .active, .dot:hover {
@@ -570,9 +577,9 @@ setInterval(showSlides, 8500);
 </script>
 </div>
 </section>
-<section id="about" style="margin-top: -50px;margin-bottom: -100px;"> 
+<section id="about" style="margin-top: -40px;margin-bottom: -100px;"> 
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px; padding-left: 20px; padding-right: 20px;">
-      <h2 class="flash-card-title w3-xlarge w3-bottombar w3-border-gold w3-padding-16" 
+      <h2 class="flash-card-title w3-xxlarge w3-bottombar w3-border-gold w3-padding-16 w3-bold" 
           style="font-size: 12px;" >
           Yet Another Networking Club
       </h2> 
@@ -587,10 +594,11 @@ setInterval(showSlides, 8500);
     #about h2{
         margin-top: 15px;
       color: #000000 !important;
+	  font-weight: bold;
     }
     @media (max-width: 768px) {
       #about h2 {
-        font-size: 14px;
+        font-size: 24px !important;
         color:#f5f1f1 
       }
     }
@@ -598,7 +606,7 @@ setInterval(showSlides, 8500);
     @media (max-width: 480px) {
      
       #about h2 {
-        font-size: 12px; 
+        font-size: 24px !important  ; 
       }
     }
    
@@ -670,7 +678,7 @@ setInterval(showSlides, 8500);
       }
   
       .vision-card p {
-        font-size: 1.1em;
+        font-size: 1em;
         color: #555;
         line-height: 1.5;
       }
@@ -1046,6 +1054,7 @@ Our Purpose    </h2>      <div class="vision-grid">
         width: 90%;
         margin: 0 auto;
         text-align: center; 
+		margin-top: 15px;
       }
   
       .flash-card-title {
@@ -1094,7 +1103,7 @@ Our Purpose    </h2>      <div class="vision-grid">
       }
   
       .card-footer p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         opacity: 0.8;
       }
   
@@ -1129,7 +1138,7 @@ Our Purpose    </h2>      <div class="vision-grid">
   
     <div class="container" id="takeaway-section">
       <h2 class="flash-card-title w3-xlarge w3-bottombar w3-border-gold w3-padding-16">
-        Your Takeaway
+       YOUR TAKEAWAY
       </h2>
   
       <div class="cards-wrapper">
@@ -1186,6 +1195,7 @@ Our Purpose    </h2>      <div class="vision-grid">
             cursor: pointer;
             text-align: center; 
             margin-bottom: 20px; 
+			margin-top: -20px;
         }
 
         .why-us-card:hover {
@@ -1305,7 +1315,7 @@ Our Purpose    </h2>      <div class="vision-grid">
     <div class="container">
         <!-- Centered Heading with W3 Bottom Bar -->
         <h2 class="heading w3-xlarge w3-bottombar w3-border-gold w3-padding-16">
-            Why Us
+            WHY US
         </h2>
 
         <div class="why-us-wrapper">
@@ -1347,6 +1357,202 @@ Our Purpose    </h2>      <div class="vision-grid">
       </div>
     </div>
 </section>
+<section id="team" class="team-section">
+    <div class="container" id="takeaway-section">
+        <h2 class="flash-card-title w3-xlarge w3-bottombar w3-border-gold w3-padding-16" style="padding-bottom: 16px !important;">
+            OUR TEAM
+        </h2><br><BR><br>
+        <div class="team-container">
+            <div class="team-card" onclick="showDescription('Swaminathan Gopal', 'Founder & CEO', 'Swaminathan brings in over two decades of experience spanning technology, business strategy, and entrepreneurship. A hands-on entrepreneur and IT executive, he has built high-performing engineering teams and spearheaded businesses from the ground up. He has led technology teams for Fortune 100 companies and is an alumnus of IIM-Calcutta. Whether it\'s leading startups or optimizing enterprise technology, Swami thrives on turning vision into reality.')">
+                <img src="team_img/swamisir.jpeg" alt="Swaminathan Gopal">
+                <div class="overlay">
+                    <p class="name">Swaminathan Gopal</p>
+                    <p class="role">Founder & CEO</p>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="showDescription('Ram Charan', 'Co-Founder & CTO', 'Ram Charan currently is an entrepreneur and comes with 20+ years of experience building products in the Software Engineering space working with Fortune 500 companies. He is vividly experienced with the Startup space in the roles of Founding Member, Technology Leadership, and Sustainable Product Innovations. For YANC, he is playing the role of CTO.')">
+                <img src="team_img/ramsir.jpeg" alt="Ram Charan">
+                <div class="overlay">
+                    <p class="name">Ram Charan</p>
+                    <p class="role">Co-Founder & CTO</p>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="showDescription('Ajay Thota', 'Co-Founder & SVP, Technology', 'Ajay Thota is an IT leader with 20+ years of US experience in leading multiple product development and digital transformation initiatives at MNCs across the globe. He is passionate about building teams by driving cultural change in individuals to become more conscientious and successful at a young age. Ajay holds an MS degree from NIU, USA, and a B.E from Osmania University.')">
+                <img src="team_img/ajaysir.jpeg" alt="Ajay Thota">
+                <div class="overlay">
+                    <p class="name">Ajay Thota</p>
+                    <p class="role">Co-Founder & SVP, Technology</p>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="showDescription('Aarti Khandeker', 'Co-Founder, Sales & Marketing', 'Aarti Khandeker is founder of BentDesign Studio, an Entrepreneur and Aarti Khandeker is founder of BentDesign Studio, an Entrepreneur and an architect with over a decade of experience in Design and Creativity. Worked on diverse projects - residential, commercial and institutional buildings.')">
+                <img src="team_img/arthimam.jpeg" alt="Aarti Khandeker">
+                <div class="overlay">
+                    <p class="name">Aarti Khandeker</p>
+                    <p class="role">Co-Founder, Sales & Marketing</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="description-modal" class="description-modal hidden">
+            <h2 id="modal-name"></h2>
+            <p id="modal-description"></p>
+            <button onclick="hideDescription()">Back to Team</button>
+        </div>
+    </div>
+
+    <style>
+        /* Reset and Basic Styles */
+        .team-card img {
+            width: 100%;
+            height: 340px;
+            aspect-ratio: 1; /* Slightly wider aspect ratio */
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Team Section Styles */
+        .team-section {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+        }
+
+        .team-card .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 10px;
+        }
+
+        .team-card:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .overlay .role {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        /* Description Modal */
+        .description-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .description-modal h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .description-modal p {
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .description-modal button {
+            background-color: #010101;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .description-modal button:hover {
+            background-color: #f56d05;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .team-container {
+                grid-template-columns: 1fr;
+            }
+
+            .description-modal h2 {
+                font-size: 1.5rem;
+            }
+
+            .description-modal p {
+                font-size: 1rem;
+            }
+
+            .description-modal button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+
+    <script>
+        function showDescription(name, role, description) {
+            document.getElementById('modal-name').textContent = name + " - " + role;
+            document.getElementById('modal-description').textContent = description;
+            document.getElementById('description-modal').classList.remove('hidden');
+        }
+
+        function hideDescription() {
+            document.getElementById('description-modal').classList.add('hidden');
+        }
+    </script>
+</section>
+  
   <section id="joinus">
     <style>
       #joinus {
@@ -1358,6 +1564,7 @@ Our Purpose    </h2>      <div class="vision-grid">
         overflow: hidden;
         border-radius: 15px;
         transition: box-shadow 0.3s ease-in-out;
+		margin-top: -20px;
       }
   
       .w3-card-4:hover {
@@ -1417,7 +1624,8 @@ Our Purpose    </h2>      <div class="vision-grid">
     <!-- Centered Heading with Bottom Bar -->
     <div class="joinus-heading-container">
       <h2 class="heading w3-xlarge w3-bottombar w3-border-gold w3-padding-16" style="color: #000000">
-        <a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank">Join Us</a>
+        <a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank"style="text-decoration: none;"> JOIN US
+		</a>
       </h2>
     </div>
   
@@ -1427,7 +1635,7 @@ Our Purpose    </h2>      <div class="vision-grid">
         <div class="w3-card-4">
           <img src="images/youth.jpg" alt="Youth">
           <div class="w3-container">
-            <p class="w3-opacity" style="text-align: center; font-weight: bolder;">
+            <p class="w3-opacity" style="text-align: center; font-weight: bolder;font-size:1.5em;text-decoration:none;">
               <a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank"> For Youth (15-28)</a>
           </p>
                     <p style="text-align: center; ">Access a world of opportunities to grow, learn, and connect.</p>
@@ -1440,7 +1648,7 @@ Our Purpose    </h2>      <div class="vision-grid">
         <div class="w3-card-4">
           <img src="images/mentor.jpg" alt="Mentor">
           <div class="w3-container">
-            <p class="w3-opacity" style="text-align: center; font-weight: bolder;"><a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank"> For Mentors </a></p>
+            <p class="w3-opacity" style="text-align: center; font-weight: bolder;font-size:1.5em;text-decoration:none;"><a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank"> For Mentors </a></p>
             <p style="text-align: center;">Share your expertise and make a difference in young lives</p>
           </div>
         </div>
@@ -1451,7 +1659,7 @@ Our Purpose    </h2>      <div class="vision-grid">
         <div class="w3-card-4">
           <img src="images/partner.jpg" alt="Partner">
           <div class="w3-container">
-            <p class="w3-opacity" style="text-align: center; font-weight: bolder;"><a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank"> For Partners </a></p>
+            <p class="w3-opacity" style="text-align: center; font-weight: bolder;font-size:1.5em;text-decoration:none;"><a href="https://forms.gle/NkJWq9aDRCfLF9aw5" target="_blank"> For Partners </a></p>
             <p style="text-align: center;">Academia, Corporate and Entrepreneurs can empower the next generation</p>
           </div>
         </div>
@@ -1463,36 +1671,14 @@ Our Purpose    </h2>      <div class="vision-grid">
     <style>
         /* General Section Styling */
         #young-minds-mashup {
+            margin-top: -39px !important;
             padding: 60px 20px;
             background-color: #fff; /* White background */
             color: #333; /* Dark gray text for readability */
             margin-bottom: 30px; /* Reduced space below the section */
         }
-
-        /* Title Styling */
-        .section-title {
-            font-size: 2.8rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #000; /* Black text */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            padding-bottom: 10px;
-            position: relative;
-        }
-
-        /* Thicker Light Grey Underline */
-        .section-title:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 5px; /* Thicker underline */
-            background-color: #d3d3d3; /* Light grey color */
-        }
-
+	
+    
         .section-description {
             font-size: 1.2rem;
             text-align: center;
@@ -1500,12 +1686,9 @@ Our Purpose    </h2>      <div class="vision-grid">
             max-width: 800px;
             margin: 0 auto 40px;
             line-height: 1.7;
+			margin-top: 15px;
         }
 
-        /* Remove extra underline from the flash-card-title */
-        .flash-card-title {
-            border-bottom: none; /* No extra bottom border */
-        }
 
         .benefits-list {
             display: flex;
@@ -1642,21 +1825,18 @@ Our Purpose    </h2>      <div class="vision-grid">
     </style>
 
     <div class="container">
-        <h8 class="section-title">Young Minds Mashup</h8>
+        <h2 class="flash-card-title w3-xlarge w3-bottombar w3-border-gold w3-padding-16">
+    YOUNG MINDS MASHUP
+</h2>
+		
         <h4>Transforming Ideas into Impactful Startups</h4>
         
         <p class="section-description">
-            <tr>
-              <td colspan="3">
-                <ul>
-                   <li> Are you brimming with innovative ideas?</li>
-                   <li> Do you dream of transforming your concepts into a successful startup?</li>
-                   <li>At YANC, we are here to make that happen!</li>  
-                   <li>Young Minds Mashup is an exclusive incubation program designed to provide young entrepreneurs, aged 15 to 25, with the tools, mentorship, and funding you need to scale your ideas.</li>
-                </ul>
-              </td>
-            </tr>
-          </p>
+			Are you brimming with innovative ideas?<br>
+			Do you dream of transforming your concepts into a successful startup?<br>
+			At YANC, we are here to make that happen!<br>
+			Young Minds Mashup is an exclusive incubation program designed to provide young entrepreneurs, aged 15 to 25, with the tools, mentorship, and funding you need to scale your ideas.
+		</p>
 
         <div class="benefits-list">
             <div class="benefit-item">
@@ -1740,6 +1920,7 @@ Our Purpose    </h2>      <div class="vision-grid">
       .contact-section {
         text-align: center;
         padding: 50px;
+		margin: auto;
       }
     
       .intro-text {
@@ -1774,6 +1955,8 @@ Our Purpose    </h2>      <div class="vision-grid">
     </style>
     </section>
     </section> 
+
+    
      <footer class="footer">
       <a href="#home" class="w3-button w3-black w3-margin">
           <i class="fa fa-arrow-up w3-margin-right"></i>To the top
@@ -1819,7 +2002,7 @@ Our Purpose    </h2>      <div class="vision-grid">
               </div>
           </div>
           <h7 style="color: white; text-align: center; font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;">
-            <br><br><br><br>  © 2024 YANC All rights reserved.
+            <br><br><br><br>  ©️ 2025 YANC All rights reserved.
           </h7>
       </div>
   
