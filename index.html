@@ -187,6 +187,7 @@
                     <a href="#vision"><i class="fas fa-eye"></i> Vision</a>
                     <a href="#vision"><i class="fas fa-bullhorn"></i> Mission</a>
                     <a href="#corevalues"><i class="fas fa-cogs"></i> Core Values</a>
+                    <a href="#faq"><i class="fas fa-cogs"></i> FAQs</a>
                 </div>
             </div>
             
@@ -222,6 +223,7 @@
                 <a href="#vision"><i class="fas fa-eye"></i> Vision</a>
                 <a href="#vision"><i class="fas fa-bullhorn"></i> Mission</a>
                 <a href="#corevalues"><i class="fas fa-heart"></i> Core Values</a>
+                <a href="#faq"><i class="fas fa-heart"></i>FAQs</a>
             </div>
         </div>
         <div class="toggle">
@@ -1827,7 +1829,7 @@ Our Purpose    </h2>      <div class="vision-grid">
     <div class="container">
         <h2 class="flash-card-title w3-xlarge w3-bottombar w3-border-gold w3-padding-16">
     YOUNG MINDS MASHUP
-</h2>
+    </h2>
 		
         <h4>Transforming Ideas into Impactful Startups</h4>
         
@@ -1867,10 +1869,68 @@ Our Purpose    </h2>      <div class="vision-grid">
         </div>
 
       <br><br>
-            
+       <!-- FAQ --> 
         
-    </div>
+     
+       
+    <section class="faq-section" id="faq">  
+        <div class="apply-button">
+            <a >FAQs</a>
+        </div>
+        <br><br>
+    <div class="row">
+    <button class="accordion">Discovery Meet</button>
+    <div class="panel">
+       <p><strong>What exactly is YANC, and how is it different from other networking or youth clubs?</strong> 
+      
+<br>Answer: YANC is a unique networking platform designed to empower young minds through
+building meaningful connections and learning life skills from young age. Unlike other
+traditional groups, YANC focuses on experiential learning, mentorship, and personal
+growth.</br></p>
 
+<p><strong>How does YANC help young people beyond traditional education?</strong> 
+      
+    <br>Answer: YANC bridges the gap between the traditional education systems and real-world
+    skills by focusing on building life skills, networking, and mentorship opportunities that
+    schools and colleges typically do not offer at scale.</br></p>
+ 
+    </div>
+    
+    <button class="accordion">Membership Application</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <button class="accordion">Mind Mashup</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+   </div>
+    </section>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+
+
+ 
+ <!-- FAQ -->    
     <section class="contact-section" id="mail">
       <p class="intro-text" style="color: black;">Ready to embark on your journey of growth and empowerment? Contact us today!</p>
       <button class="email-button" onclick="sendMail()">Email Us</button>
@@ -1916,12 +1976,47 @@ Our Purpose    </h2>      <div class="vision-grid">
   
       
     <style>
+       .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+      }
+    
+    
+      
+    .active, .accordion:hover {
+  background-color: #ccc;
+     }
      
       .contact-section {
         text-align: center;
         padding: 50px;
 		margin: auto;
       }
+    .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}  
+
     
       .intro-text {
         font-size: 1.8rem;
@@ -1952,6 +2047,9 @@ Our Purpose    </h2>      <div class="vision-grid">
         margin-top: 20px;
         color: #0c0c0c;
       }
+
+      
+
     </style>
     </section>
     </section> 
@@ -2116,3 +2214,5 @@ Our Purpose    </h2>      <div class="vision-grid">
   </footer>
 </body>
 </html>
+
+
