@@ -2065,6 +2065,192 @@ Creator')">
     </script>
 </section>
 
+<section id="team" class="team-section">
+    <div class="container" id="team-section">
+        <h2 class="flash-card-title w3-xlarge w3-bottombar w3-border-gold w3-padding-16" style="padding-bottom: 16px !important;">
+            Learn Beyond Borders
+        </h2><br><BR><br>
+        
+       <div class="team-container">
+            <div class="team-card" onclick="showDescription('Mr.Daisuke Tanji', 'Founder CEO of Indobox Inc', 'Mr. Daisuke Tanji has over 20 years experience with one of the biggest Japanese trading company as sales and marketing field, trading, investment etc. 5 years working experience in India (Delhi and Mumbai) as General Manager for development new business. Establishing Indo-Japan ecosystem to help young minds of both countries to learn and grow. His vision is The fusion of Japan and India creates new value.\nYANC and Indobox are collaborating in the space of cross-border education, cultural exchange, internships, workshops, industry exposure, and youth focused learning programs between India and Japan, with the shared vision of empowering young minds to learn, explore, and grow beyond borders')">
+                <img src="team_img/tanji.jpg" alt="Daisuke Tanji"  style="height: auto;">
+                <div class="overlay">
+                    <p class="name">Mr.Mr.Daisuke Tanji</p>
+                    <p class="role">Founder CEO of Indobox Inc</p>
+                </div>
+            </div>
+            
+
+            <div class="team-card" onclick="showDescription('Mr.Cosme Almeida', 'Abroad Programmes Director,Católica Porto Business School, Portugal', 'Cosme Almeida is an experienced professional with a demonstrated history of working in the education management industry, around different Continents, managing international accredited projects. Skilled in Marketing Management, Negotiation, Team Management, Intercultural Communication and Business Planning. Strong marketing professional with skills in Management Control and Finance. Financial Brand Valuation Consultant. Basketball Coach.\nYANC and Cosme Almeida partnership will open the gates for young minds of India and Portugal to explore both the countries for internships, industry exposure, job opportunities, startup incubation, immersive experiences for the youth and  more.')">
+                <img src="team_img/Almeida1.jpg" alt="Cosme Almeida" style="height: auto;">
+                <div class="overlay">
+                    <p class="name">Mr.Cosme Almeida</p>
+                    <p class="role">Abroad Programmes Director, Católica Porto Business School, Portugal</p>
+                </div>
+            </div>
+
+           
+          
+    
+        <div id="description-modal" class="description-modal hidden">
+            <h2 id="modal-name"></h2>
+            <p id="modal-description"></p>
+            <button onclick="hideDescription()">Back to Team</button>
+        </div>
+    </div>
+
+    
+
+    <style>
+        /* Reset and Basic Styles */
+        .team-card img {
+            width: 100%;
+            height: 340px;
+            aspect-ratio: 1; /* Slightly wider aspect ratio */
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Team Section Styles */
+        .team-section {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+        }
+
+        .team-card .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 10px;
+        }
+
+        .team-card:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .overlay .role {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        /* Description Modal */
+        .description-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .description-modal h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .description-modal p {
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .description-modal button {
+            background-color: #010101;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .description-modal button:hover {
+            background-color: #f56d05;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .team-container {
+                grid-template-columns: 1fr;
+            }
+
+            .description-modal h2 {
+                font-size: 1.5rem;
+            }
+
+            .description-modal p {
+                font-size: 1rem;
+            }
+
+            .description-modal button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+
+    <script>
+        function showDescription(name, role, description) {
+            document.getElementById('modal-name').textContent = name + " - " + role;
+            document.getElementById('modal-description').textContent = description;
+            document.getElementById('description-modal').classList.remove('hidden');
+        }
+
+        function hideDescription() {
+            document.getElementById('description-modal').classList.add('hidden');
+        }
+    </script>
+</section>
+
   
   <section id="joinus">
     <style>
